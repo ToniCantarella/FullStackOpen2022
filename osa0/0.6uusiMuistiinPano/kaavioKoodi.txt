@@ -1,0 +1,24 @@
+title Exampleapp/Single page application POST
+
+Käyttäjä->Selain: Avaa osoitteen https://studies.cs.helsinki.fi/exampleapp/spa
+
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+Palvelin-->Selain: HTML-koodi
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Palvelin-->Selain: main.css tyylitiedosto
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Palvelin-->Selain: spa.js javascript
+
+note over Palvelin:
+Selain hakee JSON-muotoisen datan palvelimelta
+end note
+
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Palvelin-->Selain: JSON-data
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/favicon.ico
+Palvelin-->Selain: favicon ikoni
+
+Käyttäjä->Selain: Kirjoittaa input-kenttään uuden merkinnän ja painaa "Save"
+
+Selain->Palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Palvelin-->Selain: Muistiinpanojen lista piirretään ruudulle uudestaan
