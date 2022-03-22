@@ -1,0 +1,33 @@
+table, th, td {
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+}
+
+th{
+    font-size: xx-large;
+}
+
+.Hyvä{
+    background-color: #66ff66;
+}
+
+.Neutraali{
+    background-color: #b3b3b3;
+}
+
+.Huono{
+    background-color: #ff6666;
+}
+
+.Yhteensä{
+    background-color: #b3b3b3;
+}
+
+.Keskiarvo{
+    background-color: #b3b3b3;
+}
+
+.Positiivisten{
+    background-color: #66ff66;
+}
+
