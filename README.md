@@ -22,7 +22,9 @@
 ## Osio 3 / Section 3
 
 #### Heroku app 
--[front-end](https://agile-bastion-64132.herokuapp.com/)
--[back-end](https://agile-bastion-64132.herokuapp.com/api/persons/)
+
+##### [repository](https://github.com/ToniCantarella/fullstackopen2022osa3)
+##### [front-end](https://agile-bastion-64132.herokuapp.com/)
+##### [back-end](https://agile-bastion-64132.herokuapp.com/api/persons/)
 
 #### 
