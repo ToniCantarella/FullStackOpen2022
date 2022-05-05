@@ -20,7 +20,8 @@
 ### Osio 2 / Section 2
 
 ### Osio 3 / Section 3
-Heroku app 
+
+#### Heroku app 
 -[front-end](https://agile-bastion-64132.herokuapp.com/)
 -[back-end](https://agile-bastion-64132.herokuapp.com/api/persons/)
 
