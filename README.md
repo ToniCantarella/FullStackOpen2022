@@ -8,3 +8,20 @@
 
 #### 0.4
 ![Solution](./osa0/0.4uusiMuistiinPano/kaavioKuva.png)
+
+#### 0.5
+![Solution](./osa0/0.5singlePageApp/kaavioKuva.png)
+
+#### 0.6
+![Solution](./osa0/0.6uusiMuistiinPano/kaavioKuva.png)
+
+### Osio 1 / Section 1
+
+### Osio 2 / Section 2
+
+### Osio 3 / Section 3
+Heroku app 
+-[front-end](https://agile-bastion-64132.herokuapp.com/)
+-[back-end](https://agile-bastion-64132.herokuapp.com/api/persons/)
+
+#### 
