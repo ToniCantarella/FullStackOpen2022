@@ -1,0 +1,34 @@
+{
+  "persons": [
+    {
+      "name": "Joonas Esimerkki",
+      "number": "345",
+      "id": 2
+    },
+    {
+      "name": "Heikki Esimerkki",
+      "number": "94385345789",
+      "id": 3
+    },
+    {
+      "name": "Aku Ankka",
+      "number": "234",
+      "id": 4
+    },
+    {
+      "name": "Hessu Hopo",
+      "number": "49038573490",
+      "id": 5
+    },
+    {
+      "name": "Tuomas Läntinen",
+      "number": "98345",
+      "id": 6
+    },
+    {
+      "name": "Metalli Mies",
+      "number": "123",
+      "id": 7
+    }
+  ]
+}
