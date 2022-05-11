@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RpIiwiaWQiOiI2MjdiOGMwMDM5NzlmN2ZlNmVhYWJmZGIiLCJpYXQiOjE2NTIyNjUyNjB9.L-wcvwNQLFLo3sjfm-RvilQh5JvAgpsE9VyzGDqRHvM
+
+{
+    "title": "abcdefg",
+    "author": "abcdefg",
+    "url": "abcdefg",
+    "likes": 2,
+    "userId": "627b8c003979f7fe6eaabfdb"
+}

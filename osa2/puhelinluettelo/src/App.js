@@ -80,7 +80,8 @@ const App = () => {
           setNewNumber('')
         })
         .catch(error => {
-          console.log(error.message)
+          console.log(error.response.data)
+          setMessage(error.message)
         })
 
       /* This renders a notification on add */
