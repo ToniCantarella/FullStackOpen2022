@@ -4,15 +4,15 @@ const User = require('../models/user')
 
 const initialBlogs = [
     {
-        title: "Testiblogi1",
-        author: "Testikirjuri",
-        url: "www.testiblogi.com",
+        title: "Kakkublogi",
+        author: "Elena Elämänkerta",
+        url: "www.LeivonnanMaailmassa.com",
         likes: 13
     },
     {
-        title: "Testiblogi2",
-        author: "Testikirjuri Tuomas",
-        url: "www.testiblogiToinen.com",
+        title: "Leffat on elämä",
+        author: "Leevi Leffaniemi",
+        url: "www.ElokuvienMatkassa.com",
         likes: 55
     }
 ]

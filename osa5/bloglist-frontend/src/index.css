@@ -1,0 +1,21 @@
+body *{
+    font-family: Verdana, sans-serif;
+}
+
+.notification {
+    padding:20px;
+    margin: 5px;
+    border-radius: 10px;
+    width: fit-content;
+    font-weight: 900;
+    font-size: x-large;
+    color: white;
+}
+
+.success {
+    background-color: rgb(161, 226, 161);
+}
+
+.error{
+    background-color: rgb(235, 87, 61);
+}

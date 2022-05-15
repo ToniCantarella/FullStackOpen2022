@@ -1,0 +1,9 @@
+put http://localhost:3003/api/blogs/627f62ce5a5bd9a9aa3b1aa1
+Content-Type: application/json
+
+{
+    "title": "Kakkublogi",
+    "author": "Elina Elämänkerta",
+    "likes": 12,
+    "user": "627cd0084c9fc433d7593bf0"
+}
