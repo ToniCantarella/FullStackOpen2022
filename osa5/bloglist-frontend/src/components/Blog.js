@@ -21,7 +21,7 @@ const Blog = ({blog, updateBlog}) => {
     borderRadius: '15px'
   }
 
-  const listColumn = {
+  const listRow = {
     display: 'grid',
     padding: '0px 10px',
     height: 'max-content',
@@ -72,16 +72,16 @@ const Blog = ({blog, updateBlog}) => {
           <button onClick={toggleVisibility}>hide</button>
 
           <div style={listGrid}>
-            <div style={listColumn}>
+            <div style={listRow}>
               <p>url:</p>
               <p>{blog.url}</p>
             </div>
-            <div style={listColumn}>
+            <div style={listRow}>
               <p>likes: </p>
               <p>{likes}</p>
               <button onClick={like} style={gridItem}>like</button>
             </div>
-            <div style={listColumn}>
+            <div style={listRow}>
               <p>user: </p>
               <p>{blog.user.username}</p>
             </div>
