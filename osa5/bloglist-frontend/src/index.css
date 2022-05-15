@@ -2,6 +2,15 @@ body *{
     font-family: Verdana, sans-serif;
 }
 
+button {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+
 .notification {
     padding:20px;
     margin: 5px;

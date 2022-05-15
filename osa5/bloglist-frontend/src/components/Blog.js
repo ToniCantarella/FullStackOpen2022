@@ -1,42 +1,53 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
-const Blog = ({blog, updateBlog}) => {
+const Blog = ({ blog, updateBlog, deleteBlog }) => {
   const grid = {
     display: 'grid',
     padding: '10px',
     width: 'max-content',
-    border: '1px solid rgba(0, 0, 0, 0.8)',
-    margin: '5px',
-    backgroundColor: '#99ffcc',
+    border: '2px solid rgba(0, 0, 0, 0.5)',
+    margin: '5px 0px',
+    backgroundColor: '#ff944d',
     gridTemplateColumns: '200px 200px 50px',
-    borderRadius: '15px'
+    borderRadius: '25px',
   }
 
   const gridItem = {
+    border: '2px solid rgba(0, 0, 0, 0.5)',
+    borderRadius: '5px',
+    padding: '5px',
+    backgroundColor: '#e65c00',
   }
 
   const listGrid = {
-    display: 'grid',   
-    height: 'max-content', 
-    borderRadius: '15px'
+    display: 'grid',
   }
 
   const listRow = {
     display: 'grid',
+    marginTop: '10px',
     padding: '0px 10px',
-    height: 'max-content',
-    borderRadius: '15px',
+    borderRadius: '10px',
     alignItems: 'center',
     gridTemplateColumns: '100px auto max-content',
-    border: '2px dotted rgba(0, 0, 0, 0.8)',
-    backgroundColor: '#6699ff'
+    border: '2px dotted rgba(0, 0, 0, 0.5)',
+    backgroundColor: '#ffe0cc'
+  }
+
+  const deleteBtn = {
+    gridColumn: '1/1',
+    width: 'max-content'
   }
 
   const [likes, setLikes] = useState(blog.likes)
   const [visible, setVisible] = useState(false)
 
-  const hideWhenVisible = {display: visible ? 'none' : ''}
-  const showWhenVisible = {display: visible ? '' : 'none'}
+  const hideWhenVisible = {
+    display: visible ? 'none' : '',
+  }
+  const showWhenVisible = {
+    display: visible ? '' : 'none',
+  }
 
   const toggleVisibility = () => {
     setVisible(!visible)
@@ -53,7 +64,14 @@ const Blog = ({blog, updateBlog}) => {
       url: blog.url
     })
   }
-  
+
+  const removeBlog = (event) => {
+    event.preventDefault()
+    window.confirm(`Remove blog named "${blog.title}" by ${blog.author}?`)
+      ? deleteBlog(blog.id)
+      : console.log('no information deleted')
+  }
+
   return (
     <div>
 
@@ -67,8 +85,8 @@ const Blog = ({blog, updateBlog}) => {
 
       <div style={showWhenVisible}>
         <div style={Object.assign(grid,)}>
-          <div>{blog.title}</div>
-          <div>{blog.author}</div>
+          <div style={gridItem}>{blog.title}</div>
+          <div style={gridItem}>{blog.author}</div>
           <button onClick={toggleVisibility}>hide</button>
 
           <div style={listGrid}>
@@ -79,14 +97,15 @@ const Blog = ({blog, updateBlog}) => {
             <div style={listRow}>
               <p>likes: </p>
               <p>{likes}</p>
-              <button onClick={like} style={gridItem}>like</button>
+              <button onClick={like}>like</button>
             </div>
             <div style={listRow}>
               <p>user: </p>
               <p>{blog.user.username}</p>
             </div>
           </div>
-          
+
+          <button onClick={removeBlog} style={deleteBtn}>delete</button>
         </div>
       </div>
 
